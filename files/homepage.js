@@ -1,5 +1,5 @@
 var OWMurl="https://api.openweathermap.org/data/2.5/weather?APPID=1f1cbdded940419b5f6d6b2d5d33c057&units=metric&id=3333207"
-var baseImageUrl = "http://openweathermap.org/img/w/10d.png"
+
 var ms = 1000*60*5;
 
 function GetWeather(){
@@ -12,7 +12,7 @@ function GetWeather(){
 function GotWeather(Http){  
   var w=JSON.parse(Http.target.responseText);
   document.getElementById("weather").innerHTML=`
-     <img class="weathericon" src="http://openweathermap.org/img/w/${w.weather[0].icon}.png" />
+     <img class="weathericon" src="https://openweathermap.org/img/w/${w.weather[0].icon}.png" />
      <span class="weatherdescription" title="${titleCase(w.weather[0].description)}">${titleCase(w.weather[0].main)}</span><br>
      Humidity: ${w.main.humidity}%<br>
      Cloud Cover: ${w.clouds.all}%<br>
