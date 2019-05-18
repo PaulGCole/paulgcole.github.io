@@ -33,9 +33,13 @@ color:black;
 
 #weatherouter{
 padding:50px;
+}
+
+#weatherimage{
 background-image:url('sky.bmp');
 background-clip: content-box;
 background-size: cover;
+border-radius: 5px;
 }
 
 #weather{
