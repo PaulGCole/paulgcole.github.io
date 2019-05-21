@@ -1,5 +1,9 @@
 var OWMurl="https://api.openweathermap.org/data/2.5/weather?APPID=1f1cbdded940419b5f6d6b2d5d33c057&units=metric&id=3333207"
 
+var dayimg = "url('https://paulgcole.github.io/files/day.bmp')";
+var nightimg = "url('https://paulgcole.github.io/files/night.bmp')";
+
+
 var ms = 1000*60*5;
 
 function GetWeather(){
@@ -22,7 +26,7 @@ function GotWeather(Http){
      Temp: ${Math.floor(w.main.temp+0.5)} &#176C <span class="weatherminmaxtemp">(${Math.floor(w.main.temp_min+0.5)} - ${Math.floor(w.main.temp_max+0.5)})</span><br> 
      Sunrise: ${timeConverter(w.sys.sunrise)} &nbsp; &nbsp; &nbsp; &nbsp; Sunset: ${timeConverter(w.sys.sunset)}<br>`; 
      
-  document.getElementById("weatherimage").style.backgroundImage = (Date.now() < w.sys.sunset*1000) ? "url('night.bmp')" : "url('day.bmp')"	
+  document.getElementById("weatherimage").style.backgroundImage = (Date.now() > w.sys.sunset*1000) ? nightimage : dayimage;
 };
 
 function titleCase(str) {
