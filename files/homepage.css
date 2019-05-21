@@ -41,7 +41,6 @@ padding:50px;
 }
 
 #weatherimage{
-background-image:url('https://paulgcole.github.io/files/sky.bmp');
 background-clip: content-box;
 background-size: cover;
 border-radius: 5px;
