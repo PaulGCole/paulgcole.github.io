@@ -26,7 +26,7 @@ function GotWeather(Http){
      Temp: ${Math.floor(w.main.temp+0.5)} &#176C <span class="weatherminmaxtemp">(${Math.floor(w.main.temp_min+0.5)} - ${Math.floor(w.main.temp_max+0.5)})</span><br> 
      Sunrise: ${timeConverter(w.sys.sunrise)} &nbsp; &nbsp; &nbsp; &nbsp; Sunset: ${timeConverter(w.sys.sunset)}<br>`; 
      
-  document.getElementById("weatherimage").style.backgroundImage = (Date.now() > w.sys.sunset*1000) ? nightimage : dayimage;
+  document.getElementById("weatherimage").style.backgroundImage = (Date.now() > w.sys.sunset*1000) ? nightimg : dayimg;
 };
 
 function titleCase(str) {
