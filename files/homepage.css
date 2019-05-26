@@ -42,6 +42,8 @@ padding:50px;
 
 #weatherimage{
 background-image:url('https://paulgcole.github.io/files/day.bmp');
+min-width:355px;
+min-height:173px;
 background-clip: content-box;
 background-size: cover;
 border-radius: 5px;
