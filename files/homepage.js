@@ -1,7 +1,7 @@
 var OWMurl="https://api.openweathermap.org/data/2.5/weather?APPID=1f1cbdded940419b5f6d6b2d5d33c057&units=metric&id=3333207"
 
-var dayimg = "url('https://paulgcole.github.io/files/day.bmp')";
-var nightimg = "url('https://paulgcole.github.io/files/night.bmp')";
+var dayimg = "url('https://paulgcole.github.io/files/day.png')";
+var nightimg = "url('https://paulgcole.github.io/files/night.png')";
 
 
 var ms = 1000*60*5;
